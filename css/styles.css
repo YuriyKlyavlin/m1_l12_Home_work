@@ -116,6 +116,8 @@ body {
 	cursor: pointer;
 }
 .product__info-param {
+	padding: 0;
+	display: inline-block;
 	float: left;
 	margin: 27px 2px 0 0;
 	width: 70px;
@@ -129,6 +131,7 @@ body {
 	transition: all .25s ease;
 }
 .product__info-text {
+	text-decoration: none;
 	display: inline-block;
 	margin: 7px 0 0 14px;
 	font: 14px/1.4 "Roboto", Arial, Sans-serif;
@@ -144,6 +147,40 @@ body {
 	width: 12px;
 	height: 7px;
 	background: url('../img/arrow.svg');
+}
+.menu__drop {
+	box-sizing: border-box;
+	position: absolute;
+	width: 100%;
+	padding: 0;
+	margin-top: 6px;
+	opacity: 0;
+	border-top: 3px solid transparent;
+	left: -999px;
+	transition: 0.5s opacity;
+}
+.menu__drop a {
+	text-decoration: none;
+	font: 14px/1.4 "Roboto", Arial, Sans-serif;
+	font-size: 18px;
+	color: #616873;
+}
+.menu__drop li {
+	text-align: center;
+	background-color: #2A3545;
+	transition: all .25s ease;
+}
+.menu__drop li:hover {
+	background-color: #152335;
+}
+.menu__list {
+	position: relative;
+	height: 32px;
+}
+.menu__list:hover .menu__drop{
+	opacity: 1;
+	top: 26px;
+	left: 0;
 }
 .product__add-btn {
 	outline: none;
