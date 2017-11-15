@@ -156,7 +156,7 @@ body {
 	margin-top: 6px;
 	opacity: 0;
 	border-top: 3px solid transparent;
-	left: -999px;
+	left: -9999px;
 	transition: 0.5s opacity;
 }
 .menu__drop a {
