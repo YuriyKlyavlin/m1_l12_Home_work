@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
-body {
-	background-color: #C5C5C7;
-	font-size: 0;
+html {
+	height: 100%;
 }
-.container {
-	display: table;
-	width: 800px;
-	height: 600px;
-	margin: 0 auto;
-	background-image: url('../img/Layer 5.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+body {
+	font-size: 0;
+	height: 100%;
+	position: relative;
+}
+.bg {
+	position: fixed;
+	top: 0;
+	left: 0; 
+	min-width: 100%;
+  min-height: 100%;
 }
 .main {
+	position: absolute;
+	top: 0;
+	left: calc(50% - 686px / 2);
 	width: 686px;
 	height: 391px;
 	margin: 109px auto 100px auto;
